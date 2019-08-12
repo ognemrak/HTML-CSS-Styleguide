@@ -49,11 +49,12 @@ HTML files must be checked here: https://validator.w3.org/
 
 *1) General standards:*
 - Avoid using HTML tags in CSS selectors. #header is overly specific compared to, for example .header and is much harder to override
+```
 /* Not recommended */
 ul.undordered-list {}
 /* Recommended */
 .undordered-list {}
-
+```
 - Always prefer using a class over HTML tags.
 - Don't use ids in selectors
 - Try to avoid huge nestings. It’s possible to style each element from the parent element. Don’t nest more than 3 levels deep
